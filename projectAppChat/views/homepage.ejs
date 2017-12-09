@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Home Page</title>
+</head>
+<script src="socket.io/socket.io.js"></script>
+<script src="jquery.js"></script>
+<script src="/js/xuly.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+<div id="formLogin">
+	<div>
+		<h2>What your name?</h2>
+		<input type="text" name="userName" id="userName">
+		<input type="button" name="Register" id="Register" value="Register">
+	</div>
+</div>
+<div id="formSendMessage">
+	<div id="left">
+		<div id="title-user">
+			<h2> Have <font id="h2-number-user">0</font> online</h2>
+		</div>
+		<div id="user-online">
+		</div>
+	</div>
+	<div id="right">
+		<div id="user-info">
+			<span>User name: <font id="name-user">huy</font></span><span><input type="button" name="logout" id="logout" value="Logout"></span>
+		</div>
+		<div id="chat-box">
+			<div id="box-message">
+				
+			</div>
+			<div id="div-input">
+				<input type="text" name="txtMessage" id="txtMessage">
+				<input type="button" name="btnSend" id="btnSend" value="Send">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

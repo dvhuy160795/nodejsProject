@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  script(src='/javascripts/app.js')
+  pre = data
+  each val in data
+    p= val.group_id
+    hr
+    p= "##########################"

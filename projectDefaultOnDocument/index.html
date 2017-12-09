@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo listen event</title>
+	<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+	<p id="divData">saSDAs</p>
+</body>
+<script>
+	  var socket = io('http://localhost:8000');
+	 
+	  socket.on('news111', function (data) {
+	    console.log(data);
+	    socket.emit('my other event', { my: 'data' });
+	    document.getElementById("divData").innerHTML = data.hello;
+	  });
+	  
+</script>
+</html>
